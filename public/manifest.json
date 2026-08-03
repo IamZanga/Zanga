@@ -1,0 +1,8 @@
+{
+    "name": "Kaunda Square Student Portal",
+    "short_name": "SIMS Portal",
+    "start_url": "/dashboard",
+    "display": "standalone",
+    "background_color": "#0B1739",
+    "theme_color": "#0B1739"
+}
