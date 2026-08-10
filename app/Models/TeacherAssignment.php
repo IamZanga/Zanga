@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class TeacherAssignment extends Model
 {
-    protected $fillable = ['teacher_id', 'class_id', 'subject_id', 'is_grade_teacher'];
+    protected $fillable = [
+        'teacher_id', 'class_id', 'subject_id', 'is_grade_teacher',
+        'periods_per_week', 'double_periods_per_week',
+    ];
 
     protected function casts(): array
     {

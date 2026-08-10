@@ -17,16 +17,16 @@ class ClassRoom extends Model
 
     public function students()
     {
-        return $this->hasMany(Student::class);
+        return $this->hasMany(Student::class, 'class_id');
     }
 
     public function teacherAssignments()
     {
-        return $this->hasMany(TeacherAssignment::class);
+        return $this->hasMany(TeacherAssignment::class, 'class_id');
     }
 
     public function timetableEntries()
     {
-        return $this->hasMany(Timetable::class);
+        return $this->hasMany(Timetable::class, 'class_id');
     }
 }
